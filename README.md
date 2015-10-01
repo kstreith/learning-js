@@ -19,12 +19,13 @@ Things that were demo'd during presentation:
 Other stuff you could look at:
 
 1. There is a autosize.js library that is applied to the Your Comment field in the app. This library causes the textarea to automatically expand as more text is entered into the text area. You might read the source code to figure out how it does this. Look in app.js to see how it applies the autosize library to the Comment field.
-2. This app has a simple modal dialog library called vex, you could try the following commands in the console while reading the vex source code (vex.js and vex.dialog.js):
+2. This app includes underscore.js which is a very common utility library, this library also includes a fair amount of comments. You might try reading source code and executing some of the methods from the console. Specifically you might want to look at lines 1212, where the utility method _.isObject is defined, below that are some are simple utility functions, like _.isNull and _.isFunction
+3. This app has a simple modal dialog library called vex, you could try the following commands in the console while reading the vex source code (vex.js and vex.dialog.js):
     1. vex.dialog.alert("Hello, World");
     2. vex.dialog.prompt({callback: function (value) { console.log('user entered ' + value); } });
     3. vex.dialog.confirm({message: 'Is it Wednesday?', callback: function (value) { console.log('is it wednesday: ' + value); }});
-3. The app has a validation library you could look at as well, it is jquery.validate.js. Try putting a breakpoint on line 1186 of jquery.validate.js. Then go enter text into the e-mail field and attempt to submit the form. After that you might try updating the email text. This will show you what kinds of events that the validation library attaches to and how it performs email validation.
-4. Lastly, if you are really adventurous I included a simple Angular app and simple Knockout JS app in the angular/ and knockout/ subfolders. You could breakpoints in these libraries to figure out how some of the features of these libraries are implemented.
+4. The app has a validation library you could look at as well, it is jquery.validate.js. Try putting a breakpoint on line 1186 of jquery.validate.js. Then go enter text into the e-mail field and attempt to submit the form. After that you might try updating the email text. This will show you what kinds of events that the validation library attaches to and how it performs email validation.
+5. Lastly, if you are really adventurous I included a simple Angular app and simple Knockout JS app in the angular/ and knockout/ subfolders. You could breakpoints in these libraries to figure out how some of the features of these libraries are implemented.
 
 Other Resources:
 
