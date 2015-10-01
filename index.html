@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!--
+  (c) 2015 Kip Streithorst 
+  License: MIT -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning Js</title>
+  <link rel="stylesheet" href="pure-min.css">
+  <link rel="stylesheet" href="vex.css" />
+  <link rel="stylesheet" href="vex-theme-os.css" />  
+  <style>
+     .content { padding: 10px; }
+     .title { font-size: 1.2em; font-weight: bold; padding-bottom: 15px; }
+	  #title { max-width: 800px; min-width: 150px; }
+     .section { padding-bottom: 10px; }
+	 #ccomment { width: 400px; max-height: 8rem; }
+     .notes { padding: 10px; margin-top: 100px; margin-left: 10px; margin-right: 10px; background-color: #eee; }
+     .notes .title { padding-bottom: 0px; }
+     #stripe { width: 20px; height: 20px; border-style: solid; border-color: black; border-width: 1px; display: inline-block; }
+  </style>
+</head>
+<body>
+  <div class="pure-g">
+    <div class="pure-u-1">
+      <div class="content">
+        <div class="title" id="title">Learning JS</div>
+		<form class="cmxform" id="commentForm" method="get" action="" novalidate="novalidate">
+		  <fieldset>
+			<legend>Please provide your name, email address (won't be published) and a comment</legend>
+			<p>
+			  <label for="cname">Name (required, at least 2 characters)</label>
+			  <input id="cname" name="name" minlength="2" type="text" required>
+			</p>
+			<p>
+			  <label for="cemail">E-Mail (required)</label>
+			  <input id="cemail" type="email" name="email" required>
+			</p>
+			<p>
+			  <label for="curl">URL (optional)</label>
+			  <input id="curl" type="url" name="url">
+			</p>
+			<p>
+			  <label for="ccomment">Your comment (required)</label>
+			  <textarea id="ccomment" name="comment" required></textarea>
+			</p>
+			<p>
+			  <input class="submit" type="submit" value="Submit">
+			</p>
+		  </fieldset>
+		</form>
+	  </div>
+    </div>
+  </div>
+  <script src="modernizr-custom.js"></script>
+  <script src="jquery-2.1.4.js"></script>
+  <script src="underscore.js"></script>
+  <script src="jquery.validate.js"></script>
+  <script src="lolex.js"></script>
+  <script src="vex.js"></script>
+  <script src="vex.dialog.js"></script>
+  <script src="jquery.fittext.js"></script>
+  <script src="autosize.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

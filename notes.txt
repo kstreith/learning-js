@@ -1,0 +1,35 @@
+fitText
+
+autosize
+
+modernizr-custom.js
+	line 802, addTest('es5array')
+	line 3796, addTest('video')
+	
+underscore.js
+    line 1212 - _.isObject
+	line 1415 - _.template
+	compiledTemplate = _.template("hello: <%= name %>, created from template");
+	compiledTemplate({name: 'World'});
+	
+lolex
+    trinug.runTimers();
+	var clock = lolex.install();
+	trinug.runTimers();
+	clock.tick(999);
+	clock.tick(1);
+	clock.tick(5000);
+	
+vex demo - modal dialog
+	vex.dialog.alert("Hello, World");
+	vex.dialog.prompt({callback: function (value) { console.log('user entered ' + value); } });	
+	vex.dialog.confirm({message: 'Is it Wednesday?', callback: function (value) { console.log('is it wednesday: ' + value); }});
+
+jquery-validation
+	search for email: to view email validator
+	
+
+
+
+
+http://youmightnotneedjquery.com/
